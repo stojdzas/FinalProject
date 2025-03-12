@@ -2,4 +2,5 @@ streamlit
 joblib
 pandas
 numpy
-scikit-learn
+fpdf
+pillow  # PIL is actually 'pillow' in pip
