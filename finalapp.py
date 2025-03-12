@@ -1,3 +1,16 @@
+import subprocess
+import sys
+
+# Install missing dependencies
+def install(package):
+    subprocess.run([sys.executable, "-m", "pip", "install", package])
+
+try:
+    import joblib
+except ModuleNotFoundError:
+    install("joblib")
+    import joblib  # Try importing again after installation
+    
 import streamlit as st
 import joblib
 import pandas as pd
