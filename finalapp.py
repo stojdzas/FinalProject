@@ -1,16 +1,3 @@
-import subprocess
-import sys
-
-# Install missing dependencies
-def install(package):
-    subprocess.run([sys.executable, "-m", "pip", "install", package])
-
-try:
-    import joblib
-except ModuleNotFoundError:
-    install("joblib")
-    import joblib  # Try importing again after installation
-    
 import streamlit as st
 import joblib
 import pandas as pd
@@ -189,10 +176,9 @@ if st.button('Diagnose'):
     
     os.remove(pdf_file)
 
-# Add a button to show the image
 if st.button('Feature Importance Insights'):
     # Open the image using PIL
-    image1 = Image.open('New_Feature_Selection.png')  # Replace with your image path
+    image1 = Image.open('New_Feature_Selection.png')  
     image2 = Image.open('MMSE.png')
     image3 = Image.open('FA.png')
     image4 = Image.open('ADL.png')
