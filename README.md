@@ -21,5 +21,5 @@
 	•	Extracted from XGBoost’s best model.
 	•	Features related to cognitive and functional assessments (MMSE, ADL, Functional Score, etc.) had the highest impact.
 	•	Observed that binary features (e.g., Memory Complaints, Behavioral Problems) might appear less frequently in decision trees but still play a crucial role.
- 5. Loading & Deploying the Model (Joblib)
- 6. Web App Creation Using Streamlit
+        5. Loading & Deploying the Model (Joblib)
+        6. Web App Creation Using Streamlit
